@@ -36,7 +36,13 @@ function [ result ] = create_window( window, fft_size, varargin )
 % http://en.wikipedia.org/wiki/Window_function
 % http://uk.mathworks.com/help/signal/ref/blackmanharris.html
   
-  [a0,a1,a2,a3,a4,a5,a6] = zeros(1, 7);
+  a0 = 0;
+  a1 = 0;
+  a2 = 0;
+  a3 = 0;
+  a4 = 0;
+  a5 = 0;
+  a6 = 0;
   
   %% Decode Selection
   switch (window)
