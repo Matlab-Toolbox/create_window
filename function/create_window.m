@@ -96,7 +96,7 @@ function [ result ] = create_window( window, fft_size, varargin )
   end
   
 
-   if (window == 'rectangular')
+   if (strcmp(window, 'rectangular'))
      result.window = ones(fft_size, 1);
    else
      for i = 1:fft_size 
