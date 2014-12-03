@@ -48,9 +48,10 @@ function [ result ] = create_window( window, fft_size, varargin )
   switch (window)
     case 'blackman'
       %result.window = blackman(fft_size);
-      a0 = 0.42 ;
-      a1 = 0.50 ;
-      a2 = 0.08 ;
+      alpha = 0.16;
+      a0 = (1 - alpha) /2;
+      a1 = 1/2 ;
+      a2 = alpha/2 ;
       
     case 'hanning'
       % result.window = hanning(fft_size);
