@@ -103,6 +103,8 @@ function [ result ] = create_window( window, fft_size, varargin )
         w = (2*pi*i)/fft_size;
         result.window(i) = (a0 - a1*cos(w) + a2*cos(2*w) - a3*cos(3*w) + a4*cos(4*w) - a5*cos(5*w) + a6*cos(6*w));
       end
+     % Transpose to match Matlab toolbox versions
+     result.window = result.window' ;
     end
 
     result.incoherent_power_gain = sum(result.window.^2);
