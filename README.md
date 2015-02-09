@@ -1,15 +1,8 @@
 Create Window
 ==
 
-    w = create_window( 'blackmanharris4', 128 );
+Create Windowss for use with FFT functions.
 
-Accessible properties:
-
-    w.window
-    w.incoherent_power_gain
-    w.coherent_power_gain
-   
-     
 Window type is one of :
 
      'rectangular',      
@@ -21,18 +14,30 @@ Window type is one of :
      'hamming',          
      'hanning'
 
+Example 
+--
+
+    w = create_window( 'blackmanharris4', 128 );
+
+Accessible properties:
+
+    w.window
+    w.incoherent_power_gain
+    w.coherent_power_gain
+   
+     
 Installation
 --
 
 To get library clone from github:
 
-  cd to your lib folder
-   git clone https://github.com/Matlab-Toolbox/create_window.git
+    cd to your lib folder
+    git clone https://github.com/Matlab-Toolbox/create_window.git
 
 Add function to path:
 
-  %% Add functions to path
-  run(['/path_to_package/create_window/load_toolbox.m']);
+    %% Add functions to path
+    run(['/path_to_package/create_window/load_toolbox.m']);
 
 
 
