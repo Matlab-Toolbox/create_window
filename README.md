@@ -1,7 +1,7 @@
 Create Window
 ==
 
-Create Windowss for use with FFT functions.
+Create Windows for use with FFT functions.
 
 Window type is one of :
 
