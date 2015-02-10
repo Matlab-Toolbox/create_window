@@ -5,7 +5,7 @@
 
   %% For Functions
   %    Add function to path
-  addpath('../function/');
+  run('../load_toolbox.m')
 
   
  % floating_point_tol = 1e-15;
