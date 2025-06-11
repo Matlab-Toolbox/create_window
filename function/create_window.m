@@ -124,8 +124,6 @@ function [ result ] = create_window( window, fft_size, varargin )
 
     % Window power gain
   % http://www.wriley.com/Properties%20of%20FFT%20Windows%20Used%20in%20Stable32.pdf
-  % https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=0CD0QFjAC&url=http%3A%2F%2Fwww.dtic.mil%2Fcgi-bin%2FGetTRDoc%3FAD%3DADA034956&ei=T79VUtChFca-0wXSkYDICg&usg=AFQjCNFAkn88WTNPD7z-GtErdJsjsY-m2A&sig2=snbCQ7yN_lZa7eH6zijGQg&bvm=bv.53760139,d.d2k&cad=rja
-  % http://www.dtic.mil/get-tr-doc/pdf?AD=ADA034956
     result.incoherent_power_gain = sum(result.window.^2)  ;
     result.coherent_gain         = sum(result.window)     ; %Process Gain
     result.coherent_power_gain   = result.coherent_gain^2 ; 
